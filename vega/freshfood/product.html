@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 <head>
-<title>Vega Modelo</title>
+<title>Productos</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="e-commerce site well design with responsive view." />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
 <link href="css/stylesheet.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 <link href="owl-carousel/owl.carousel.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
 <script src="javascript/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="javascript/jstree.min.js" type="text/javascript"></script>
-<script src="javascript/template.js" type="text/javascript" ></script>
+<script type="text/javascript" src="javascript/jstree.min.js"></script>
+<script type="text/javascript" src="javascript/template.js"></script>
 <script src="javascript/common.js" type="text/javascript"></script>
 <script src="javascript/global.js" type="text/javascript"></script>
 <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-<link rel="icon" href="image/logo1.png" sizes="80x80" />
 </head>
-<body>
+<body class="product col-2 left-col">
 <div class="preloader loader" style="display: block; background:#f2f2f2;"> <img src="image/loader.gif"  alt="#"/></div>
 <header>
   <div class="header-top">
@@ -30,17 +29,17 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="top-left pull-left">
-            <!--<div class="language">
+           <!--  <div class="language">
               <form action="#" method="post" enctype="multipart/form-data" id="language">
-                <div class="btn-group">
-                  <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="image/flags/gb.png" alt="English" title="English">English <i class="fa fa-caret-down"></i></button>
-                  <ul class="dropdown-menu">
+				<div class="btn-group">
+					<button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="image/flags/gb.png" alt="English" title="English">English <i class="fa fa-caret-down"></i></button>
+					<ul class="dropdown-menu">
                     <li><a href="#"><img src="image/flags/lb.png" alt="Arabic" title="Arabic"> Arabic</a></li>
                     <li><a href="#"><img src="image/flags/gb.png" alt="English" title="English"> English</a></li>
                   </ul>
                 </div>
               </form>
-            </div>
+            </div> -->
             <div class="currency">
               <form action="#" method="post" enctype="multipart/form-data" id="currency">
                 <div class="btn-group">
@@ -58,24 +57,24 @@
                   </ul>
                 </div>
               </form>
-            </div>-->
+            </div>
           </div>
           <div class="top-right pull-right">
             <div id="top-links" class="nav pull-right">
               <ul class="list-inline">
-                <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>Socios</span> <span class="caret"></span></a>
+                <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>My Account</span> <span class="caret"></span></a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="register.html">Registro</a></li>
+                    <li><a href="register.html">Register</a></li>
                     <li><a href="login.html">Login</a></li>
                   </ul>
                 </li>
-              <!--<li><a href="#" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i><span>Wish List</span><span> (0)</span></a></li>-->
+                <li><a href="#" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i><span>Wish List</span><span> (0)</span></a></li>
               </ul>
               <div class="search-box">
-                          <input class="input-text" placeholder="buscar.." type="text">
+                          <input class="input-text" placeholder="search.." type="text">
                           <button class="search-btn"><i class="fa fa-search"></i></button>
                         </div>
-              
+
             </div>
           </div>
         </div>
@@ -85,20 +84,18 @@
   <div class="container">
     <div class="header-inner">
       <div class="col-sm-4 col-xs-6 header-left">
-        <div> <a href="index.html"><img src="image/logo1.jpg" title="logo-vega" alt="logo-vega" class="img-responsive" /></a> </div>
-         
+        <div class="shipping">
+          <div class="shipping-img"></div>
+          <div class="shipping-text">+91(000)1234-1234<span class="shipping-detail">Week From 9:00am To 7:00pm</span></div>
+        </div>
       </div>
       <div class="col-sm-4 col-xs-12 header-middle">
         <div class="header-middle-top">
           <div id="logo"> <a href="index.html"><img src="image/logo.png" title="E-Commerce" alt="E-Commerce" class="img-responsive" /></a> </div>
         </div>
       </div>
-  <div class="col-sm-4 col-xs-12 header-right">
-      <div class="shipping">
-          <div class="shipping-img"></div>
-          <div class="shipping-text">+45 (2) 227 172<span class="shipping-detail">Atendemos Todos los días de año, las 24 hrs.</span></div>
-        </div>
-  <!--  <div id="cart" class="btn-group btn-block">
+      <div class="col-sm-4 col-xs-12 header-right">
+        <div id="cart" class="btn-group btn-block">
           <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"> <span id="cart-total"><span class="cart-title">Shopping Cart</span><br>
           0 item(s) - $0.00</span> </button>
           <ul class="dropdown-menu pull-right cart-dropdown-menu">
@@ -143,40 +140,39 @@
           </ul>
         </div>
       </div>
-    </div>-->
+    </div>
   </div>
 </header>
 <nav id="menu" class="navbar">
-  <div class="nav-inner container">
-    <div class="navbar-header"><span id="category" class="visible-xs">Categorias</span>
-      <button type="button" class="btn btn-navbar navbar-toggle" ><i class="fa fa-bars"></i></button>
+    <div class="nav-inner container">
+        <div class="navbar-header"><span id="category" class="visible-xs">Categories</span>
+            <button type="button" class="btn btn-navbar navbar-toggle" ><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="navbar-collapse">
+            <ul class="main-navigation">
+                <li><a href="index.html"   class="parent"  >Home</a> </li>
+                <li><a href="category.html"   class="parent"  >Fruits</a> </li>
+                <li><a href="category.html"   class="parent"  >Vegetables</a> </li>
+                <li><a href="category.html"   class="parent"  >Exotica</a> </li>
+                <li><a href="category.html"   class="parent"  >Groceries</a> </li>
+                <li><a href="category.html"   class="parent"  >Health & Beauty</a> </li>
+                <li><a href="#" class="active parent">Page</a>
+                    <ul>
+                        <li><a href="category.html">Category Page</a></li>
+                        <li><a href="cart.html">Cart Page</a></li>
+                        <li><a href="checkout.html">Checkout Page</a></li>
+                        <li><a href="blog.html" >Blog Page</a></li>
+                        <li><a href="singale-blog.html" >Singale Blog Page</a></li>
+                        <li><a href="register.html">Register Page</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="parent"  >Blog</a></li>
+                <li><a href="about-us.html" >About us</a></li>
+                <li><a href="contact.html" >Contact Us</a> </li>
+            </ul>
+        </div>
     </div>
-    <div class="navbar-collapse">
-      <ul class="main-navigation">
-        <li><a href="index.html">Inicio</a> </li>
-        <li><a href="category.html">Locales</a> </li>
-        <li><a href="productos.html">Productos</a> </li>
-    <!--<li><a href="category2.html"   class="parent"  >Verduras</a> </li>
-        <li><a href="category3.html"   class="parent"  >Frutos Secos</a> </li>
-        <li><a href="#" class="active parent">Page</a>
-          <ul>
-            <li><a href="category.html">Category Page</a></li>
-            <li><a href="cart.html">Cart Page</a></li>
-            <li><a href="checkout.html">Checkout Page</a></li>
-            <li><a href="blog.html" >Blog Page</a></li>
-            <li><a href="singale-blog.html" >Singale Blog Page</a></li>
-            <li><a href="register.html">Registro</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </li>-->
-        <li><a href="blog.html">Galería</a></li>
-        <li><a href="about-us.html" >Nosotros</a></li>
-        <li><a href="contact.html" >Contacto</a> </li>
-        <li><a href="blog.html">Noticias</a></li>
-        <li><a href="links.html" >Links</a> </li>
-      </ul>
-    </div>
-  </div>
 </nav>
 <div class="container">
   <ul class="breadcrumb">
@@ -399,11 +395,11 @@
                 <h4 class="product-name"><a href="#" title="lorem ippsum dolor dummy">Clothing</a></h4>
                 <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
               </div>
-              <div class="button-group">
+              <!-- <div class="button-group">
                 <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn">Add to Cart</button>
+                <button type="button" class="addtocart-btn">Add to Cart</button> 
                 <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product"><i class="fa fa-exchange"></i></button>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
@@ -454,14 +450,14 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <h1 class="productpage-title">lorem ippsum dolor dummy</h1>
-          <div class="rating product"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="review-count"> <a href="#" onClick="$('a[href=\'#tab-review\']').trigger('click'); return false;">1 reviews</a> / <a href="#" onClick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Write a review</a></span>
-            <hr>
+        <!-- <!--<div class="col-sm-6"> -->
+          <!-- <h1 class="productpage-title">Frutas</h1> -->
+          <!-- <div class="rating product"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> <span class="review-count"> <a href="#" onClick="$('a[href=\'#tab-review\']').trigger('click'); return false;">1 reviews</a> / <a href="#" onClick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Write a review</a></span> -->
+            <!-- <hr> -->
             <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" ></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
+            <!-- <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" ></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div> -->
             <!-- AddThis Button END -->
-          </div>
+          <!-- </div>  -->
           <ul class="list-unstyled productinfo-details-top">
             <li>
               <h2 class="productpage-price">$122.00</h2>
@@ -508,14 +504,154 @@
           <div class="tab-pane active" id="tab-description">
             <div class="cpt_product_description ">
               <div>
-                <p> <strong>More room to move.</strong></p>
-                <p> With 80GB or 160GB of storage and up to 40 hours of battery life, the new lorem ippsum dolor dummy lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.</p>
-                <p> <strong>Cover Flow.</strong></p>
-                <p> Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.</p>
-                <p> <strong>Enhanced interface.</strong></p>
-                <p> Experience a whole new way to browse and view your music and video.</p>
-                <p> <strong>Sleeker design.</strong></p>
-                <p> Beautiful, durable, and sleeker than ever, lorem ippsum dolor dummy now features an anodized aluminum and polished stainless steel enclosure with rounded edges.</p>
+                <p> <strong>Frutas</strong></p>
+                <p> arandanos 
+				cereza 
+				chirimoya 
+				ciruela 
+				ciruela seca 
+				damasco 
+				damasco seco 
+				durazno nectarin 
+				durazno nectarin seco 
+				durazno peludo 
+				frutilla 
+				kaki 
+				kiwi 
+				mandarina 
+				mango 
+				manzana fuji 
+				manzana pit lady 
+				manzana royal gala 
+				manzana verde 
+				melón calameño 
+				melón tuna 
+				membrillo 
+				naranjas 
+				naranjas jugo
+				nispero 
+				pepino fruta 
+				peras 
+				peras secas 
+				piñas 
+				piñas secas 
+				platanos 
+				platanos secos 
+				pomelos 
+				sandia primera 
+				sandia segunda 
+				sandia tercera 
+				uva blanca 
+				uva blanca seca 
+				uva climson 
+				uva climson seca 
+				uva italia 
+				uva maulina 
+				uva reglo 
+				uva rosada 
+				</p>
+                <p> <strong>Verduras</strong></p>
+                <p> 
+				De la zona
+
+				acelga 
+				betarragas 
+				cilantro 
+				papa dessire 
+				papa nueva 
+				papa semillon 
+				papa vieja 
+				perejil 
+				puerros 
+				rabanitos 
+				zanahoria de zona 
+				Nacional
+
+
+				aceitunas 
+				aji seco 
+				aji verde 
+				ajo 
+				ajo en polvo 
+				alcachofas 
+				alcachofas en conserva 
+				apio docena 
+				arvejas 
+				berenjena 
+				betarragas 
+				bruselas 
+				cebollas malla 
+				cebollas mallon 
+				De la zona
+
+				cebollas nuevas 
+				cebollin 
+				champiñones 
+				choclo dulce 
+				choclo pastelero 
+				coliflor 
+				dientes de dragon
+				habas 
+				lechugas escarola
+				lechugas milanesa 
+				limones 
+				limones pica 
+				morrones rojos 
+				morrones verdes 
+				palta californiana 
+				palta de la cruz 
+				palta deyco 
+				palta hass 
+				pepino ensalada 
+				poroto granado 
+				poroto verde 
+				repollo 
+				repollo morado 
+				tomate primera 
+				tomate segunda 
+				tomate tercera 
+				zanahorias 
+				zapallo camote nuevo 
+				zapallo camote viejo 
+				zapallo italiano 
+				</p>
+                <p> <strong>Otros Productos</strong></p>
+                <p> aji (escabeche) 
+				aji (salsa) 
+				barraganetes 
+				berro 
+				bolsas 
+				cafeteria 
+				carbon parrillero 
+				carbon por saco 
+				cebolla (escabeche) 
+				champiñon ostra 
+				colaciones 
+				comida casera 
+				comida rápida 
+				desayunos 
+				esencia pan de pascua 
+				esencia vainilla 
+				fabrica de empanadas 
+				huevos 
+				jengibre 
+				lechuga hidroponica
+				mallas 
+				menu de almuerzos
+				pickles 
+				pulpa 
+				reparaciones mayores 
+				reposteria 
+				romero 
+				rucula 
+				soya 
+				tomate cherry
+				vasos 
+				venta neumaticos y accesorios 
+				vulcanización 
+				</p>
+            <!--    <p> <strong>Sleeker design.</strong></p> -->
+            <!--    <p> Beautiful, durable, and sleeker than ever, lorem ippsum dolor dummy now features an anodized aluminum and polished stainless steel enclosure with rounded edges.</p> -->
               </div>
             </div>
             <!-- cpt_container_end --></div>
@@ -560,7 +696,7 @@
           </div>
         </div>
       </div>
-      <h3 class="productblock-title">Related Products</h3>
+      <h3 class="productblock-title"> Frutas <h3>
       <div class="box">
         <div id="related-slidertab" class="row owl-carousel product-slider">
           <div class="item">
@@ -709,94 +845,95 @@
   </div>
 </div>
 <footer>
-  <div class="container">
-      <div class="row">
-        <div class="footer-top-cms">
-          <div class="col-sm-7">
-                  <div class="newslatter">
-                      <form>
-                          <h5>Newsletter</h5>
-                          <div class="input-group">
-                              <input type="text" class=" form-control" placeholder="Correo......">
-                              <button type="submit" value="Sign up" class="btn btn-large btn-primary">Suscribirse</button>
-                          </div>
-                      </form>
-                  </div>
-              </div>
-          <div class="col-sm-5">
-          <div class="footer-social">
-              <h5>Social</h5>
-              <ul>
-                  <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100006653389373"><i class="fa fa-facebook"></i></a></li>
-              <!--<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-                  <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <!--<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-              <!--<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>-->
-              </ul>
-          </div>
-          </div>
-      </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-3 footer-block">
-              <h5 class="footer-title">Información</h5>
-              <ul class="list-unstyled ul-wrapper">
-                  <li><a href="about-us.html">Nosotros</a></li>
-              <!--<li><a href="checkout.html">Delivery Information</a></li>-->
-              <!--<li><a href="#">Privacy Policy</a></li>-->
-                  <li><a href="#">Términos &amp; Condiciones</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3 footer-block">
-              <h5 class="footer-title">Servicio al Cliente</h5>
-              <ul class="list-unstyled ul-wrapper">
-                  <li><a href="contact.html">Contacto</a></li>
-              <!--<li><a href="#">Returns</a></li>-->
-              <!--<li><a href="#">Site Map</a></li>-->
-              <!--<li><a href="#">Wish List</a></li>-->
-              </ul>
-          </div>
-          <div class="col-sm-3 footer-block">
-              <h5 class="footer-title">Extras</h5>
-              <ul class="list-unstyled ul-wrapper">
-                  <li><a href="#">Espacios de venta</a></li>
-                  <li><a href="gift.html">Tarifa</a></li>
-              <!--<li><a href="affiliate.html">Affiliates</a></li>-->
-              <!--<li><a href="#">Specials</a></li>-->
-              </ul>
-          </div>
-          <div class="col-sm-3 footer-block">
-              <div class="content_footercms_right">
-                  <div class="footer-contact">
-                      <h5 class="contact-title footer-title">Contacto</h5>
-                      <ul class="ul-wrapper">
-                          <li><i class="fa fa-map-marker"></i><span class="location2"> Instalaciones & Oficinas,<br>
-                              Km 5 camino Temuco a Cajón, Temuco<br>
-                              Chile</span></li>
-                          <li><i class="fa fa-envelope"></i><span class="mail2"><a href="#">vegatco@hotmail.com</a></span></li>
-                          <li><i class="fa fa-mobile"></i><span class="phone2">+56 9 9999 9999</span></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <a id="scrollup">Desplazar</a> </footer>
-<div class="footer-bottom">
-<div class="container">
-  <div class="copyright">Made with love by <a class="skylabs" href="http://www.skylabs.cl/">skylabs &copy; 2018 </a> </div>
-  <div class="footer-bottom-cms">
-<!--<div class="footer-payment">
-      <ul>
-        <li class="mastero"><a href="#"><img alt="" src="image/payment/mastero.jpg"></a></li>
-        <li class="visa"><a href="#"><img alt="" src="image/payment/visa.jpg"></a></li>
-        <li class="currus"><a href="#"><img alt="" src="image/payment/currus.jpg"></a></li>
-        <li class="discover"><a href="#"><img alt="" src="image/payment/discover.jpg"></a></li>
-        <li class="bank"><a href="#"><img alt="" src="image/payment/bank.jpg"></a></li>
-      </ul>
-    </div>-->
-  </div>
-</div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-top-cms">
+            <div class="col-sm-7">
+                    <div class="newslatter">
+                        <form>
+                            <h5>Newsletter</h5>
+                            <div class="input-group">
+                                <input type="text" class=" form-control" placeholder="Email Here......">
+                                <button type="submit" value="Sign up" class="btn btn-large btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            <div class="col-sm-5">
+            <div class="footer-social">
+                <h5>Social</h5>
+                <ul>
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 footer-block">
+                <h5 class="footer-title">Information</h5>
+                <ul class="list-unstyled ul-wrapper">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="checkout.html">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 footer-block">
+                <h5 class="footer-title">Customer Service</h5>
+                <ul class="list-unstyled ul-wrapper">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Wish List</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 footer-block">
+                <h5 class="footer-title">Extras</h5>
+                <ul class="list-unstyled ul-wrapper">
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="gift.html">Gift Vouchers</a></li>
+                    <li><a href="affiliate.html">Affiliates</a></li>
+                    <li><a href="#">Specials</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 footer-block">
+                <div class="content_footercms_right">
+                    <div class="footer-contact">
+                        <h5 class="contact-title footer-title">Contact Us</h5>
+                        <ul class="ul-wrapper">
+                            <li><i class="fa fa-map-marker"></i><span class="location2"> Warehouse & Offices,<br>
+                                12345 Street name, California<br>
+                                USA</span></li>
+                            <li><i class="fa fa-envelope"></i><span class="mail2"><a href="#">info@localhost.com</a></span></li>
+                            <li><i class="fa fa-mobile"></i><span class="phone2">+91 0987-654-321</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="scrollup">Scroll</a> </footer>
+<!-- <div class="footer-bottom"> -->
+  <!-- <div class="container"> -->
+    <!-- <div class="copyright">Powered By<a class="yourstore" href="http://www.lionode.com/">lionode &copy; 2016 </a> </div> -->
+    <!-- <div class="footer-bottom-cms"> -->
+      <!-- <div class="footer-payment"> -->
+        <!-- <ul> -->
+          <!-- <li class="mastero"><a href="#"><img alt="" src="image/payment/mastero.jpg"></a></li> -->
+          <!-- <li class="visa"><a href="#"><img alt="" src="image/payment/visa.jpg"></a></li> -->
+          <!-- <li class="currus"><a href="#"><img alt="" src="image/payment/currus.jpg"></a></li> -->
+          <!-- <li class="discover"><a href="#"><img alt="" src="image/payment/discover.jpg"></a></li> -->
+          <!-- <li class="bank"><a href="#"><img alt="" src="image/payment/bank.jpg"></a></li> -->
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
 </body>
 </html>
+
