@@ -282,14 +282,13 @@
                 <!-- <button type="button" class="addtocart-btn">Add to Cart</button> -->
                 <!-- <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product"><i class="fa fa-exchange"></i></button> -->
               <!-- </div> -->
-            </div>
+<!--             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="col-sm-9" id="content">
       <h1>Contactanos</h1>
-     <!-- <h3>Our Location</h3> -->
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="row">
@@ -300,51 +299,52 @@
               <strong>Dirección:</strong>
               <div class="address"> Km 5 camino Temuco a Cajón, Temuco </div>
               <br>
-            <!--  <strong>Country:</strong> USA <br> -->
-              <br>
-              <strong>Telefono: </strong>+56 9 9999 9999
-              </address>
-            </div>
-            <div class="col-sm-8 rigt">
-              <div class="map">
-                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-                <div style="overflow:hidden;height:200px;width:100%;">
-                  <div id="gmap_canvas" style="height:200px;width:600px;"></div>
+             <!-- <strong>Country:</strong> USA <br> -->
+              <!-- <br> -->
+              <!-- <strong>Telefono: </strong>+56 9 9999 9999 -->
+              <!-- </address> -->
+            <!-- </div> -->
+            <!-- <div class="col-sm-8 rigt"> -->
+              <!-- <div class="map"> -->
+                <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+                <!-- <div style="overflow:hidden;height:200px;width:100%;"> -->
+                  <!-- <div id="gmap_canvas" style="height:200px;width:600px;"></div> -->
 
-                  <a class="google-map-code" href="http://www.pureblack.de/google-maps/" id="get-map-data">pureblack.de</a></div>
-                <script type="text/javascript"> function init_map(){var myOptions = {zoom:14, scrollwheel:false,center:new google.maps.LatLng(36.778261,-119.41793239999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(36.778261, -119.41793239999998)});infowindow = new google.maps.InfoWindow({content:"<b>Fresh Food privated limited</b><br/>Warehouse &amp; Offices 12345<br/> California " });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-              </div>
-            </div>
+                  <!-- <a class="google-map-code" href="http://www.pureblack.de/google-maps/" id="get-map-data">pureblack.de</a></div> -->
+                <!-- <script type="text/javascript"> function init_map(){var myOptions = {zoom:14, scrollwheel:false,center:new google.maps.LatLng(36.778261,-119.41793239999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(36.778261, -119.41793239999998)});infowindow = new google.maps.InfoWindow({content:"<b>Fresh Food privated limited</b><br/>Warehouse &amp; Offices 12345<br/> California " });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script> -->
+              <!-- </div> -->
+            <!-- </div> -->
           </div>
-        </div>
+        </div> 
       </div>
-      <form class="form-horizontal" enctype="multipart/form-data" method="post" action="#">
+      <form class="form-horizontal" enctype="multipart/form-data" method="post" action="submit">
         <fieldset>
-          <h3>Contactanos</h3>
           <div class="form-group required">
-            <label for="input-name" class="col-sm-2 control-label">Tu Nombre</label>
-            <div class="col-sm-10">
+            <label for="input-name" class="col-sm-2 control-label"> Tu Nombre </label>
+            <div class="col-sm-7">
               <input type="text" class="form-control" id="input-name" value="" name="name">
             </div>
           </div>
           <div class="form-group required">
-            <label for="input-email" class="col-sm-2 control-label">E-mail</label>
-            <div class="col-sm-10">
+            <label for="input-email" class="col-sm-2 control-label"> E-mail </label>
+            <div class="col-sm-7">
               <input type="email" class="form-control" id="input-email" value="" name="email">
             </div>
           </div>
           <div class="form-group required">
-            <label for="input-enquiry" class="col-sm-2 control-label">Mensaje</label>
-            <div class="col-sm-10">
-              <textarea class="form-control" id="input-enquiry" rows="10" name="enquiry"></textarea>
+            <label for="input-enquiry" class="col-sm-2 control-label"> Mensaje </label>
+            <div class="col-sm-7">
+              <textarea class="form-control" id="input-enquiry" rows="8" name="enquiry"></textarea>
             </div>
           </div>
         </fieldset>
-        <div class="buttons">
-          <div class="pull-right">
-            <input type="submit" value="Submit" class="btn btn-primary">
-          </div>
-        </div>
+		<div class="col-sm-2">
+			<div class="buttons">
+			  <div class="pull-center">
+				<input type="submit" value="Enviar" class="btn btn-primary">
+			  </div>
+			</div>
+		</div>
       </form>
     </div>
   </div>
