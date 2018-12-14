@@ -1,3 +1,34 @@
+<?php
+session_start();
+
+if (isset($_SESSION['autorExist']) && $_SESSION['autorExist'] == true && isset($_SESSION['loger']) && $_SESSION['loger'] == true && $_SESSION['username']=='admin') {
+
+} else {
+    echo "<script>alert('Tienes que iniciar sesion para entrar al sitio.') </script>";
+    echo "<script> window.location = 'php/logout.php' </script>";
+    echo "<script> window.location = 'php/login.php' </script>";
+
+exit;
+}
+
+$now = time();
+
+if($now > $_SESSION['expire']) {
+session_destroy();
+
+echo "<script>alert('Su sesion ha expirado, inicie sesion nuevamente.') </script>";    
+echo "<script> window.location = 'php/login.php' </script>";
+exit;
+}
+?>
+
+<?php
+
+include 'php/Connection.php';
+$connection = new Connection();
+$conn = $connection-> getConnection();
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,79 +55,61 @@
 <body class="account-login col-2">
 <div class="preloader loader" style="display: block; background:#f2f2f2;"> <img src="image/loader.gif"  alt="#"/></div>
 <header>
-    <div class="header-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="top-left pull-left">
-            </div>
-            <div class="top-right pull-right">
-              <div id="top-links" class="nav pull-right">
-                <ul class="list-inline">
-                  <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>Socios</span> <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="login.html">Login</a></li>
-                    </ul>
-                  </li>
-               </ul> 
-                <div class="search-box">
-                    <input class="input-text" placeholder="buscar.." type="text">
-                    <button class="search-btn"><i class="fa fa-search"></i></button>
-                </div>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="top-left pull-left">
+          </div>
+          <div class="top-right pull-right">
+            <div id="top-links" class="nav pull-right">
+              <ul class="list-inline">
+                <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>Mi cuenta</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="php/logout.php">Salir</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="search-box">
+                <input class="input-text" placeholder="buscar.." type="text">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="header-inner">
-        <div class="col-sm-3 col-xs-6 header-left">
-          <div> <a href="index.html"><img src="image/logo1.jpg" title="logo-vega" alt="logo-vega" class="img-responsive" /></a> 
-          </div>
+  </div>
+  <div class="container">
+    <div class="header-inner">
+      <div class="col-sm-3 col-xs-6 header-left">
+        <div> <a href="blog.php"><img src="image/logo1.jpg" title="logo-vega" alt="logo-vega" class="img-responsive" /></a> </div>
+       
+      </div>
+      <div class="col-sm-4 col-xs-12 header-middle">
+        <div class="header-middle-top">
+          <div id="logo"> <a href="blog.php"><img src="image/logo.png" title="E-Commerce" alt="E-Commerce" class="img-responsive" /></a> </div>
         </div>
-        <div class="col-sm-4 col-xs-12 header-middle">
-          <div class="header-middle-top">
-            <div id="logo"> <a href="index.html"><img src="image/logo.png" title="E-Commerce" alt="E-Commerce" class="img-responsive" /></a> </div>
-          </div>
+      </div>
+  <div class="col-sm-4 col-xs-12 header-right">
+      <div class="shipping">
+          <div class="shipping-img"></div>
+          <div class="shipping-text">+45 (2) 227 172<span class="shipping-detail">Atendemos Todos los días de año, las 24 hrs.</span></div>
         </div>
-    <div class="col-sm-4 col-xs-12 header-right">
-        <div class="shipping">
-            <div class="shipping-img"></div>
-            <div class="shipping-text">+45 (2) 227 172<span class="shipping-detail">Atendemos Todos los días de año, las 24 hrs.</span></div>
-          </div>
-    </div>
+  </div>
 </header>
 <nav id="menu" class="navbar">
-    <div class="nav-inner container">
-        <div class="navbar-header"><span id="category" class="visible-xs">Categories</span>
-            <button type="button" class="btn btn-navbar navbar-toggle" ><i class="fa fa-bars"></i></button>
-        </div>
-        <div class="navbar-collapse">
-            <ul class="main-navigation">
-                <li><a href="index.html"   class="parent"  >Home</a> </li>
-                <li><a href="category.html"   class="parent"  >Fruits</a> </li>
-                <li><a href="category.html"   class="parent"  >Vegetables</a> </li>
-                <li><a href="category.html"   class="parent"  >Exotica</a> </li>
-                <li><a href="category.html"   class="parent"  >Groceries</a> </li>
-                <li><a href="category.html"   class="parent"  >Health & Beauty</a> </li>
-                <li><a href="#" class="active parent">Page</a>
-                    <ul>
-                        <li><a href="category.html">Category Page</a></li>
-                        <li><a href="cart.html">Cart Page</a></li>
-                        <li><a href="checkout.html">Checkout Page</a></li>
-                        <li><a href="blog.html" >Blog Page</a></li>
-                        <li><a href="singale-blog.html" >Singale Blog Page</a></li>
-                        <li><a href="register.html">Register Page</a></li>
-                        <li><a href="contact.html">Contact Page</a></li>
-                    </ul>
-                </li>
-                <li><a href="blog3.php" class="parent"  >Blog</a></li>
-                <li><a href="about-us.html" >About us</a></li>
-                <li><a href="contact.html" >Contact Us</a> </li>
-            </ul>
-        </div>
+  <div class="nav-inner container">
+    <div class="navbar-header"><span id="category" class="visible-xs">Categorias</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" ><i class="fa fa-bars"></i></button>
     </div>
+    <div class="navbar-collapse">
+      <ul class="main-navigation">
+        <li><a href="home.php">Inicio</a> </li>
+        <li><a href="blog.php">Blog</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <div class="container">
   <br>
@@ -104,23 +117,25 @@
     
     <div class="col-sm-12" id="content">
       <div class="row">
-        <div class="col-sm-5">
-          
-        </div>
+        <div class="col-sm-5"></div>
         <div class="col-sm-6">
           <div class="well">
-            <h2>Iniciar Sesión</h2>
-            <form enctype="multipart/form-data" method="post" action="php/login.php">
+            <h2>Nueva Entrada*</h2>
+            <form enctype="multipart/form-data" method="post" action="php/savePost.php">
               <div class="form-group">
-                <label for="user" class="control-label">Rut</label>
-                <input type="text" class="form-control" id="user" placeholder="11111111-1" value="" name="user" required>
+                <label for="titulo" class="control-label">Titulo</label>
+                <input type="text" class="form-control" id="titulo" placeholder="..."  maxlength="50" value="" name="titulo" required>
               </div>
               <div class="form-group">
-                <label for="password" class="control-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="****" value="" name="password" required>
+                <label for="imagen" class="control-label">Imagen</label>
+                <input type="text" class="form-control" id="imagen" placeholder="https://example.com" maxlength="255" value="" name="imagen">
+            </div>
+              <div class="form-group">
+                <label for="mensaje" class="control-label">Mensaje</label>
+                <textarea type="text" class="form-control" id="mensaje" placeholder="..." maxlength="255" value="" name="mensaje" required></textarea>
                 <!-- <a href="forgetpassword.html">Forgotten Password</a> -->
               </div>
-              <input type="submit" class="btn btn-primary" value="Entrar">
+              <input type="submit" class="btn btn-primary" value="Crear">
             </form>
           </div>
         </div>

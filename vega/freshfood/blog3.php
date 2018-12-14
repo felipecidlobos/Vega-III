@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="e-commerce site well design with responsive view." />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet" media="screen" />
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link href="css/stylesheet.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
@@ -20,6 +23,8 @@
 <script src="javascript/common.js" type="text/javascript"></script>
 <script src="javascript/global.js" type="text/javascript"></script>
 <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/> 
 <link rel="icon" href="image/logo1.png" sizes="80x80" />
 </head>
 <body>
@@ -30,14 +35,14 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="top-left pull-left">
+            
           </div>
           <div class="top-right pull-right">
             <div id="top-links" class="nav pull-right">
               <ul class="list-inline">
                 <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>Socios</span> <span class="caret"></span></a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="register.html">Registro</a></li>
-                    <li><a href="login.html">Login</a></li>
+                  <li><a href="login.html">Login</a></li>
                   </ul>
                 </li>
               </ul>
@@ -67,6 +72,7 @@
           <div class="shipping-img"></div>
           <div class="shipping-text">+45 (2) 227 172<span class="shipping-detail">Atendemos Todos los días de año, las 24 hrs.</span></div>
         </div>
+  
   </div>
 </header>
 <nav id="menu" class="navbar">
@@ -76,14 +82,9 @@
     </div>
     <div class="navbar-collapse">
       <ul class="main-navigation">
-        <li><a href="index.html">Inicio</a> </li>
-        <li><a href="category.html">Locales</a> </li>
-        <li><a href="productos.html">Productos</a> </li>
-        <li><a href="blog.html">Galería</a></li>
-        <li><a href="about-us.html" >Nosotros</a></li>
-        <li><a href="contact.html" >Contacto</a> </li>
-        <li><a href="blog.html">Noticias</a></li>
-        <li><a href="links.html" >Links</a> </li>
+      <li><a href="home.php">Inicio</a> </li>
+    
+        <li><a href="blog.php">Blog</a></li>
       </ul>
     </div>
   </div>
@@ -91,52 +92,22 @@
 <div class="container">
   <br>
   <div class="row">
-    <div id="column-left" class="col-sm-3 hidden-xs column-left"></div>
+
     <div id="content" class="col-sm-9">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="thumbnails">
-            <div><a class="thumbnail" href="stores/store1.jpg" title="lorem ippsum dolor dummy"><img src="stores/store1.jpg" title="COMERCIAL SEPA LTDA." alt="lorem ippsum dolor dummy" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <h1 class="productpage-title">COMERCIAL SEPA LTDA.</h1>
-          <hr>
-          <ul class="list-unstyled product_info">
-            <li>
-              <label class="glyphicon glyphicon-briefcase"></label>
-              <span> Venta de huevos al detalle y por mayor. </span>
-            </li>
-            <li>
-              <label class="glyphicon glyphicon-map-marker"></label>
-              <span> Bandejon A, local 3 </span>
-            </li>
-            <li>
-                <label class="glyphicon glyphicon-user"></label>
-                <span> Jorge Sepúlveda </span>
-            </li>
-            <li>
-              <label class="glyphicon glyphicon-phone"></label>
-              <span> 452226835 /</span>
-              <span> 951698081 </span>
-            </li>
-            <li>
-              <label class="glyphicon glyphicon-envelope"></label>
-              <span>temuco@comercialsepa.cl</span>
-            </li>
-            <li>
-              <label class="glyphicon glyphicon-usd"></label>
-              <span> EFECTIVO </span>
-            </li>    
-          </ul>
-          <hr>
-          <p class="product-desc"> Comercial SEPA LTDA. es una empresa de mucha exeriencia dedicada a la producción y venta de huevos, nos preocupamos de que 
-              nuestros productos sean de la mejor calidad y que lleguen siempre frescos, sabor que llega a su hogar desde 1967.</p><p> "Huevos 
-              Los Productores, los huevos mejores"</p>
+      
+
+      <div class="container">
+        <div id="row"></div>
+      </div>
+      
+    </div>
+    
+
+    <div id="column-right" class="col-sm-3 hidden-xs column-left">
+      <div class="column-block">
+        
         </div>
       </div>
-      <br>
     </div>
   </div>
 </div>
@@ -160,7 +131,9 @@
               <h5>Social</h5>
               <ul>
                   <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100006653389373"><i class="fa fa-facebook"></i></a></li>
+              
                   <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              
               </ul>
           </div>
           </div>
@@ -171,6 +144,7 @@
               <h5 class="footer-title">Información</h5>
               <ul class="list-unstyled ul-wrapper">
                   <li><a href="about-us.html">Nosotros</a></li>
+             
                   <li><a href="#">Términos &amp; Condiciones</a></li>
               </ul>
           </div>
@@ -178,6 +152,7 @@
               <h5 class="footer-title">Servicio al Cliente</h5>
               <ul class="list-unstyled ul-wrapper">
                   <li><a href="contact.html">Contacto</a></li>
+             
               </ul>
           </div>
           <div class="col-sm-3 footer-block">
@@ -185,6 +160,7 @@
               <ul class="list-unstyled ul-wrapper">
                   <li><a href="#">Espacios de venta</a></li>
                   <li><a href="gift.html">Tarifa</a></li>
+              
               </ul>
           </div>
           <div class="col-sm-3 footer-block">
@@ -202,15 +178,17 @@
               </div>
           </div>
       </div>
-    </div>
-    <a id="scrollup">Desplazar</a> </footer>
-<div class="footer-bottom">
-  <div class="container">
-    <div class="copyright">Made with love by <a class="skylabs" href="http://www.skylabs.cl/"> skylabs &copy; 2018 </a> </div>
-    <div class="footer-bottom-cms">
-    </div>
   </div>
+  <a id="scrollup">Desplazar</a> </footer>
+<div class="footer-bottom">
+<div class="container">
+  <div class="copyright">Made with love by <a class="skylabs" href="http://www.skylabs.cl/">skylabs &copy; 2018 </a> </div>
+  <div class="footer-bottom-cms">
+
+  </div>
+</div>
 </div>
 </body>
 </html>
 
+<script src="javascript/postListPublic.js" type="text/javascript"></script>

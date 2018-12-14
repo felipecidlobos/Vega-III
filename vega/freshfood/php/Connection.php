@@ -2,13 +2,11 @@
 
 Class Connection {
 
-    private $servername = "localhost";
-    private $username = "vegamodelo_skylabs";
-    private $password = "skylabs2018";
-    private $database = "vegamodelo_sk";
-
     public function getConnection() {
-
+        $servername = "localhost";
+        $username = ""; //"vegamodelo_skylabs";
+        $password = ""; //"skylabs2018";
+        $database = "vegamodelo_sk";
         // Create connection
         $conn = new mysqli($servername, $username, $password, $database);
 
@@ -16,7 +14,7 @@ Class Connection {
         if ($conn->connect_error) {
             die("Conexión Fallida: " . $conn->connect_error);
         }
-        echo "Conexión Realizada";
+        //echo "Conexión Realizada";
         return $conn;
     }
 }
